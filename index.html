@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--Google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap" rel="stylesheet">
+    <!--css-->
+    <link rel="stylesheet" href="style.css/main.css">
+    <link rel="stylesheet" href="style.css/calculator.css">
+    <link rel="stylesheet" href="style.css/media.css">
+    <title>Tip calculator</title>
+</head>
+<body>
+    <header class="logo">
+            <img src="images/logo.svg" alt="logo">
+        </header>
+
+    <div class="container">
+        <div id="box-1">
+            <div class="wrapper">
+            <!--Bill-->
+            <div class="Bill">
+                <h3>Bill</h3>
+                <span class="currencyinput">
+                    <input type="number" name="input-bill" id="dollar" placeholder="0" required>
+                </span>
+            </div>
+
+            <!--Tip-->
+            <div class="Tip">
+                <h3>Select Tip %</h3>
+                <div class="list">
+                    <a href="#"><input type="submit" class="submit" value="5%"></a>
+                    <a href="#"><input type="submit" class="submit" value="10%"></a>
+                    <a href="#"><input type="submit" class="submit" id="btn-active" value="15%"></a>
+                    <a href="#"><input type="submit" class="submit" value="25%"></a>
+                    <a href="#"><input type="submit" class="submit" value="50%"></a>
+                    <input type="text" id="custom" placeholder="Custom" required>
+                </div>
+            </div>
+
+            <!--People-->
+            <div class="People">
+                <div>
+                <h3>Number of People</h3>
+                    <div class="error"></div>
+            </div>
+                <span class="currencyinput">
+                    <input type="number" name="number" id="number"  placeholder="0">
+                </span>
+            </div>
+        </div> <!--wrapper ends-->
+
+        </div>
+
+<!--output section -->
+        <div id="box-2">
+
+             <div class="tip-wrapper">
+            <div class="amount">
+                <h4 class="result">Tip Amount</h4>
+                <small class="result"> / person</small></div>
+                <div id="tipamount">$0.00</div>
+            </div>
+
+            <div class="total-wrapper">
+            <div class="total">
+                <h4 class="result">Total</h4>
+                <small class="result"> / person</small>
+            </div>
+            <div id="totalamount">$0.00</div>
+        </div>
+        <!--button-->
+            <div>
+                <button id="button" onclick=" " >RESET</button>
+            </div>
+        </div>
+
+
+    </div>
+
+    <script src="./js/app.js"></script>
+</body>
+</html>
