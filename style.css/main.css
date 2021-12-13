@@ -244,13 +244,38 @@ body {
 #button:hover {
     background-color: rgb(159,232,223);
 }
-/* Responsive */
+@media only screen and (min-width: 768px){
+    #tipamount {
+        position: relative;
+        right: 30px;
+        bottom: -13px;
+    }
+    #totalamount {
+        position: relative;
+        left: 65px;
+        top: 40px;
+    }
+    #button {
+       margin-bottom: 5px;
+       position: relative;
+       top: 120px;
+       background-color: #26C2AD;
+       left: 15px;
+    }
+}
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 760px) {
+    body{
+        position: fixed;
+    }
     .container {
         width: 250px;
         height: 480px;
         flex-direction: row;
+        position: fixed;
+        top: 30%;
+        right: 25%;
+        left: 15%; 
     }
     #box-1{
         width: 220px;
@@ -293,16 +318,15 @@ body {
         top: 40px;
     }
     #button {
-       margin-bottom: 5px;
-       position: relative;
-       top: 65px;
-       background-color: #26C2AD;
-       left: 15px;
-    }
+        margin-bottom: 5px;
+        position: relative;
+        top: 65px;
+        background-color: #26C2AD;
+        left: 15px;
+     }
     
-
 }
-@media only screen and (max-width: 1200px) {
+@media only screen and (min-width: 991px) {
     #tipamount {
         position: relative;
         right: 30px;
@@ -321,4 +345,5 @@ body {
        left: 15px;
     }
 }
+
 
