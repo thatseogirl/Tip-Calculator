@@ -21,7 +21,13 @@ function handleClick(event) {
     let tipButtonValueInteger = parseInt(tipButtonValue);
 
     let billValueInteger = parseInt(billValue);
-    
+
+    if (billValueInteger <= 0) {
+        msg.classList.add('error');
+        msg.innerHTML = "Bill can't be zero";
+        return;
+    }
+
     let tipAmount = (billValueInteger * tipButtonValueInteger) / 100 .toFixed(2);
 
     let totalAmount = (billValueInteger + tipAmount).toFixed(2);
@@ -30,20 +36,25 @@ function handleClick(event) {
     let totalPersons = people.value;
     let totalPersonInteger = parseInt(totalPersons);
 
-    let totalTip = (tipAmount/ totalPersonInteger).toFixed(2);
+    if (totalPersonInteger <= 0) {
+        msg.classList.add('error');
+        msg.innerHTML = "Number can't be zero";
+        return; 
+    }
 
-    let totalBill = (totalAmount / totalPersonInteger).toFixed(2);
+    let totalTip = (tipAmount/ totalPersonInteger).toFixed(0);
+
+    let totalBill = (totalAmount / totalPersonInteger).toFixed(0);
+
+    if (totalBill <= 0) {
+        return;
+    }
+    if (totalTip <= 0) {
+        return;
+    }
 
     tipamount.innerHTML = ("$" + totalTip);
     totalamount.innerHTML = ("$" + totalBill);
-
-    if (totalPersonInteger <= 0) {
-        msg.classList.add('error');
-        msg.innerHTML = "Can't be zero";
-    }else {
-        console.log('success');
-    }
-
 }
 
 custom.addEventListener('keyup', performCustom);
@@ -66,6 +77,7 @@ function performCustom(event) {
 
     tipamount.innerHTML = ("$" + totalCustom);
     totalamount.innerHTML = ("$" + totalCustomBill);
+
 }
 
 button.addEventListener('click', handleReset);
@@ -80,7 +92,7 @@ function handleReset(e) {
     totalamount.innerHTML = ("$" + totalBill);  
 }
 
-     
+
 
 
 

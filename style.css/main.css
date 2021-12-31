@@ -267,6 +267,10 @@ body {
 @media only screen and (max-width: 760px) {
     body{
         position: fixed;
+        width: 600px;
+    }
+    .logo{
+        margin: auto;
     }
     .container {
         width: 250px;
