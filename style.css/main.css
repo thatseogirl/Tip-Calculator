@@ -99,8 +99,6 @@ body {
 
 .error{
     position: relative;
-    left: 150px;
-    top: -37px;
     color: red;
     padding: 5px;
     font-size: 8px;  
