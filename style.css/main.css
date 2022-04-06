@@ -1,9 +1,3 @@
- /* - Very dark cyan: hsl(183, 100%, 15%)
-- Dark grayish cyan: hsl(186, 14%, 43%)
-- Dark grayish cyan: hsl(184, 14%, 56%)
-- Light grayish cyan: hsl(185, 41%, 84%)
-- Light grayish cyan: hsl(189, 41%, 97%)
-- White: hsl(0, 0%, 100%) */
 
 body {
     width: 100%;
@@ -242,7 +236,7 @@ body {
 #button:hover {
     background-color: rgb(159,232,223);
 }
-@media only screen and (min-width: 768px){
+@media only screen and (min-width: 550px){
     #tipamount {
         position: relative;
         right: 30px;
@@ -262,11 +256,7 @@ body {
     }
 }
 
-@media only screen and (max-width: 760px) {
-    body{
-        position: fixed;
-        width: 600px;
-    }
+@media only screen and (max-width: 760px) { 
     .logo{
         margin: auto;
     }
