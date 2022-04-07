@@ -1,290 +1,277 @@
-
 body {
-    width: 100%;
-    background-color: hsl(185, 41%, 84%);
-    font-family: 'Space Mono', monospace;
-    height: 100vh;
+  width: 100%;
+  background-color: hsl(185, 41%, 84%);
+  font-family: "Space Mono", monospace;
+  height: 100vh;
 }
-.main{
-    padding: 40px;
+.main {
+  padding: 40px;
 }
-.logo{
-    position: relative;
-    text-align: center;
-    top: 100px;
-    padding-bottom: 30px;
-    margin-bottom: 50px;
-    font-size: small;
-    
+.logo {
+  position: relative;
+  text-align: center;
+  top: 100px;
+  padding-bottom: 30px;
+  margin-bottom: 50px;
+  font-size: small;
 }
 .container {
-    background-color: hsl(0, 0%, 100%);
-    width: 550px;
-    height: 300px;
-    padding: 10px;
-    margin: auto;
-    bottom: 30px;
-    border-radius: 10px;
-    border: 1px solid white;
-    position: relative;
-    top: 50px;
+  background-color: hsl(0, 0%, 100%);
+  width: 550px;
+  height: 300px;
+  padding: 10px;
+  margin: auto;
+  bottom: 30px;
+  border-radius: 10px;
+  border: 1px solid white;
+  position: relative;
+  top: 50px;
 }
 #box-1 {
-    float:left;
-    width: 250px;
-    background-color: #ffffff;
-    position: relative;
-    top: 10px;
-    border-radius: 10px;
-    height: 260px;
-    padding-left: 30px;
+  float: left;
+  width: 250px;
+  background-color: #ffffff;
+  position: relative;
+  top: 10px;
+  border-radius: 10px;
+  height: 260px;
+  padding-left: 30px;
 }
 #box-2 {
-    float: right;
-    background-color: hsl(183, 100%, 15%);
-    width: 250px;
-    position: relative;
-    top: 10px;
-    border-radius: 10px;
-    border: 2px;
-    height: 260px;
-    right: 10px;
+  float: right;
+  background-color: hsl(183, 100%, 15%);
+  width: 250px;
+  position: relative;
+  top: 10px;
+  border-radius: 10px;
+  border: 2px;
+  height: 260px;
+  right: 10px;
 }
 .wrapper {
-    width: 250px;
-    height: 230px;
-    position: relative;
-    top: 10px;
-    bottom: 10px;
-    right: 15px;
-    
+  width: 250px;
+  height: 230px;
+  position: relative;
+  top: 10px;
+  bottom: 10px;
+  right: 15px;
 }
 .Bill {
-    line-height: 5px;
-    color: #b8c4c3;
-    font-family: 'Space Mono', monospace;
-    font-weight: 700;
-    font-size: 8px;
-    position: relative;
-    top: 4px;
-    width: 200px;
+  line-height: 5px;
+  color: #b8c4c3;
+  font-family: "Space Mono", monospace;
+  font-weight: 700;
+  font-size: 8px;
+  position: relative;
+  top: 4px;
+  width: 200px;
 }
 #currencyinput {
-    color: #f3f8fb;
-    display: inline-block;
+  color: #f3f8fb;
+  display: inline-block;
 }
 
 #dollar {
-    background-image: url(../Images/icon-dollar.svg);
-    background-size: 7px;
-    background-repeat: no-repeat;
-    
-    background-position: 10px 8px;
-    color: #23c3ab;
-    text-align: right;
-    font-family: 'Space Mono', monospace;
-    width: 240px;
-    height: 25px;
-    border: 2px;
-    border-color: none;
-    position: relative;
+  background-image: url(../Images/icon-dollar.svg);
+  background-size: 7px;
+  background-repeat: no-repeat;
+
+  background-position: 10px 8px;
+  color: #23c3ab;
+  text-align: right;
+  font-family: "Space Mono", monospace;
+  width: 240px;
+  height: 25px;
+  border: 2px;
+  border-color: none;
+  position: relative;
 }
 #dollar:hover {
-    border-radius: 2px solid;
-    border-color: rgb(159,232,223);
+  border-radius: 2px solid;
+  border-color: rgb(159, 232, 223);
 }
 
-.error{
-    position: relative;
-    color: red;
-    padding: 5px;
-    font-size: 8px;  
-  }
+.error {
+  position: relative;
+  color: red;
+  padding: 5px;
+  font-size: 8px;
+}
 
 #number {
-        background-image: url(../Images/icon-person.svg);
-        background-size: 8px;
-        background-position: 10px 8px;
-        background-repeat: no-repeat;
-        background-color: #f3f8fb;
-        color: #23c3ab;
-        text-align: right;
-        font-family: 'Space Mono', monospace;
-        width: 240px;
-        height: 25px;
-        border: 2px;
-        border-color: none;
-        position: relative;
-        top: -25px;
+  background-image: url(../Images/icon-person.svg);
+  background-size: 8px;
+  background-position: 10px 8px;
+  background-repeat: no-repeat;
+  background-color: #f3f8fb;
+  color: #23c3ab;
+  text-align: right;
+  font-family: "Space Mono", monospace;
+  width: 240px;
+  height: 25px;
+  border: 2px;
+  border-color: none;
+  position: relative;
+  top: -25px;
 }
 
 .Tip {
-    line-height: 28px;
-    color: #b8c4c3;
-    font-family: 'Space Mono', monospace;
-    font-size: 8px;
-    position: relative;
-    top: 4px;
+  line-height: 28px;
+  color: #b8c4c3;
+  font-family: "Space Mono", monospace;
+  font-size: 8px;
+  position: relative;
+  top: 4px;
 }
-.tip-wrapper, .total-wrapper{
-    display: flex;
-    justify-content: space-between;
-    padding: 20px;
-    margin-top: 10px;
-}
-
-.list{
-    display: inline;
-    list-style: none;
+.tip-wrapper,
+.total-wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  margin-top: 10px;
 }
 
-.submit{
-    background-color: hsl(183, 100%, 15%);
-    display: inline-block;
-    color: white;
-    border-radius: 2px;
-    border: 5px;
-    width: 70px;
-    height: 25px;
-    position: relative;
-    font-family: 'Space Mono', monospace;
-    right: 5px;
-    margin-bottom: 10px;
-    margin-left: 7px;
-    line-height: 2px;
-    cursor: pointer;
+.list {
+  display: inline;
+  list-style: none;
+}
+
+.submit {
+  background-color: hsl(183, 100%, 15%);
+  display: inline-block;
+  color: white;
+  border-radius: 2px;
+  border: 5px;
+  width: 70px;
+  height: 25px;
+  position: relative;
+  font-family: "Space Mono", monospace;
+  right: 5px;
+  margin-bottom: 10px;
+  margin-left: 7px;
+  line-height: 2px;
+  cursor: pointer;
 }
 .submit:hover {
-    background-color: rgb(159,232,223);
+  background-color: rgb(159, 232, 223);
 }
 #custom {
-    background-color: #f3f8fb;
-    font-family: 'Space Mono', monospace;
-    width: 70px;
-    height: 25px;
-    border: 5px;
-    color: #23c3ab;
-    cursor: pointer;
+  background-color: #f3f8fb;
+  font-family: "Space Mono", monospace;
+  width: 70px;
+  height: 25px;
+  border: 5px;
+  color: #23c3ab;
+  cursor: pointer;
 }
 #custom:hover {
-    border-color: rgb(159,232,223);
+  border-color: rgb(159, 232, 223);
 }
-.list a{
-    text-decoration: none;
+.list a {
+  text-decoration: none;
 }
 
 .People {
-    line-height: 28px;
-    color: #b8c4c3;
-    font-family: 'Space Mono', monospace;
-    font-size: 8px;
-    position: relative;
-    top: 4px;
-    width: 200px;
+  line-height: 28px;
+  color: #b8c4c3;
+  font-family: "Space Mono", monospace;
+  font-size: 8px;
+  position: relative;
+  top: 4px;
+  width: 200px;
 }
 .amount {
-    color: whitesmoke;
-    position: relative;
-    font-family: 'Space Mono', monospace;
-    font-size: 10px;
-    line-height: 1em;
+  color: whitesmoke;
+  position: relative;
+  font-family: "Space Mono", monospace;
+  font-size: 10px;
+  line-height: 1em;
 }
 .result {
-    line-height: none;
-    margin: 0;
-    padding: 0;
+  line-height: none;
+  margin: 0;
+  padding: 0;
 }
 .total {
-    color: whitesmoke;
-    font-size: 10px;
-    line-height: 1em;
-
+  color: whitesmoke;
+  font-size: 10px;
+  line-height: 1em;
 }
 #tipamount {
-    float: right;
-    color: #23c3ab;
-    font-size: 30px;
-    font-family: 'Space Mono', monospace;
+  float: right;
+  color: #23c3ab;
+  font-size: 30px;
+  font-family: "Space Mono", monospace;
 }
 
 #totalamount {
-    float: right;
-    color: #23c3ab;
-    font-size: 30px;
-    font-family: 'Space Mono', monospace;
-} 
-.btn{
-    display: flex;
-    justify-content:baseline;
-    margin:12px;
+  float: right;
+  color: #23c3ab;
+  font-size: 30px;
+  font-family: "Space Mono", monospace;
+}
+.btn {
+  display: flex;
+  justify-content: baseline;
+  margin: 12px;
 }
 #button {
-    background-color: #26C2AD;
-    color: whitesmoke;
-    font-family: 'Space Mono', monospace;
-    width: 220px;
-    border-radius: 10px;
-    border-color: none;
-    padding: 10px;
-    cursor: pointer;
+  background-color: #26c2ad;
+  color: whitesmoke;
+  font-family: "Space Mono", monospace;
+  width: 220px;
+  border-radius: 10px;
+  border-color: none;
+  padding: 10px;
+  cursor: pointer;
 }
 #button:hover {
-    background-color: rgb(159,232,223);
+  background-color: rgb(159, 232, 223);
 }
-/* @media only screen and (min-width: 550px){
-   
-    #button {
-       position: relative;
-       bottom: 25px;
-      padding: 5px;
-    }
-} */
 
-@media only screen and (max-width: 760px) { 
-    .logo{
-        margin: auto;
-    }
-    .container {
-        width: 250px;
-        height: 480px;
-        flex-direction: row;
-        margin-top: 30px;
-    }
-    #box-1{
-        width: 220px;
-    }
-    #box-2 {
-        width: 230px;
-        height: 160px;
-        line-height: 10px;
-        position: relative;
-        margin-top: 50px;
-    }
-    .Bill {
-        padding-bottom: 2px;
-    }
-    
-    #dollar {
-        width: 220px;
-    }
-    #number{
-        width: 220px;
-    }
-    .submit {
-        width: 100px;
-    }
-    #custom {
-        width: 100px;
-    }  
-   .tip-wrapper, .total-wrapper{
+@media only screen and (max-width: 760px) {
+  .logo {
+    margin: auto;
+  }
+  .container {
+    width: 250px;
+    height: 480px;
+    flex-direction: row;
+    margin-top: 30px;
+  }
+  #box-1 {
+    width: 220px;
+  }
+  #box-2 {
+    width: 230px;
+    height: 160px;
+    line-height: 10px;
+    position: relative;
+    margin-top: 50px;
+  }
+  .Bill {
+    padding-bottom: 2px;
+  }
+
+  #dollar {
+    width: 220px;
+  }
+  #number {
+    width: 220px;
+  }
+  .submit {
+    width: 100px;
+  }
+  #custom {
+    width: 100px;
+  }
+  .tip-wrapper,
+  .total-wrapper {
     padding: 15px;
-   }
-   #button {
+  }
+  #button {
     position: relative;
     bottom: 20px;
-   padding: 5px;
- }
-    
+    padding: 5px;
+  }
 }
-
-
