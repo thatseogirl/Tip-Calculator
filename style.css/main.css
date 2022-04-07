@@ -3,7 +3,10 @@ body {
     width: 100%;
     background-color: hsl(185, 41%, 84%);
     font-family: 'Space Mono', monospace;
-    font-size: bold;
+    height: 100vh;
+}
+.main{
+    padding: 40px;
 }
 .logo{
     position: relative;
@@ -123,6 +126,13 @@ body {
     position: relative;
     top: 4px;
 }
+.tip-wrapper, .total-wrapper{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    margin-top: 10px;
+}
+
 .list{
     display: inline;
     list-style: none;
@@ -176,8 +186,6 @@ body {
     color: whitesmoke;
     position: relative;
     font-family: 'Space Mono', monospace;
-    left: 20px;
-    top: 40px;
     font-size: 10px;
     line-height: 1em;
 }
@@ -188,21 +196,14 @@ body {
 }
 .total {
     color: whitesmoke;
-    position: relative;
-    left: 20px;
     font-size: 10px;
     line-height: 1em;
-    position: relative;
-    top: 80px;
 
 }
 #tipamount {
     float: right;
     color: #23c3ab;
     font-size: 30px;
-    position: fixed;
-    right: 480px;
-    bottom: 350px;
     font-family: 'Space Mono', monospace;
 }
 
@@ -210,51 +211,34 @@ body {
     float: right;
     color: #23c3ab;
     font-size: 30px;
-    position: fixed;
-    bottom: 280px;
-    right: 480px;
     font-family: 'Space Mono', monospace;
 } 
+.btn{
+    display: flex;
+    justify-content:baseline;
+    margin:12px;
+}
 #button {
-    background-color: rgb(13,104, 109);
+    background-color: #26C2AD;
     color: whitesmoke;
-    position: fixed;
-    top: 130px;
-    margin: auto;
     font-family: 'Space Mono', monospace;
-    width: 200px;
-    height: 30px;
-    border-radius: 1px;
+    width: 220px;
+    border-radius: 10px;
     border-color: none;
-    padding-left: 20px;
-    padding-right: 20px;
-    bottom: -100px;
-    right: 470px;
-    opacity: 0.5;
+    padding: 10px;
     cursor: pointer;
 }
 #button:hover {
     background-color: rgb(159,232,223);
 }
-@media only screen and (min-width: 550px){
-    #tipamount {
-        position: relative;
-        right: 30px;
-        bottom: -13px;
-    }
-    #totalamount {
-        position: relative;
-        left: 65px;
-        top: 40px;
-    }
+/* @media only screen and (min-width: 550px){
+   
     #button {
-       margin-bottom: 5px;
        position: relative;
-       top: 120px;
-       background-color: #26C2AD;
-       left: 15px;
+       bottom: 25px;
+      padding: 5px;
     }
-}
+} */
 
 @media only screen and (max-width: 760px) { 
     .logo{
@@ -264,10 +248,7 @@ body {
         width: 250px;
         height: 480px;
         flex-direction: row;
-        position: fixed;
-        top: 30%;
-        right: 25%;
-        left: 15%; 
+        margin-top: 30px;
     }
     #box-1{
         width: 220px;
@@ -294,48 +275,16 @@ body {
     }
     #custom {
         width: 100px;
-    }
-    .total {
-        position: relative;
-        top: 60px;
-    }
-    #tipamount {
-        position: relative;
-        right: 30px;
-        bottom: -13px;
-    }
-    #totalamount {
-        position: relative;
-        left: -28px;
-        top: 40px;
-    }
-    #button {
-        margin-bottom: 5px;
-        position: relative;
-        top: 65px;
-        background-color: #26C2AD;
-        left: 15px;
-     }
+    }  
+   .tip-wrapper, .total-wrapper{
+    padding: 15px;
+   }
+   #button {
+    position: relative;
+    bottom: 20px;
+   padding: 5px;
+ }
     
-}
-@media only screen and (min-width: 991px) {
-    #tipamount {
-        position: relative;
-        right: 30px;
-        bottom: -13px;
-    }
-    #totalamount {
-        position: relative;
-        left: 65px;
-        top: 40px;
-    }
-    #button {
-       margin-bottom: 5px;
-       position: relative;
-       top: 120px;
-       background-color: #26C2AD;
-       left: 15px;
-    }
 }
 
 

@@ -1,5 +1,5 @@
 
-### The challenge
+## The challenge
 
 Users should be able to:
 
@@ -7,4 +7,4 @@ Users should be able to:
 - See hover states for all interactive elements on the page
 - Calculate the correct tip and total cost of the bill per person
 
-###  Live demo 
+###  Live demo  https://thatseogirl.github.io/Tip-Calculator/
